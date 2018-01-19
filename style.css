@@ -1,0 +1,25 @@
+*{
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.row{
+  margin: 1rem;
+}
