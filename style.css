@@ -1,25 +1,308 @@
 *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Exo';
+}
+
+
+h1{
+  font-size: 2em;
+  margin: 0;
+}
+
+h2{
+  margin: 0;
+  padding-left: 0.5%;
+}
+
+h4{
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#cnts{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+/*-----SideBar-----------------------------------------*/
+#logo{
+  width: 90%;
+  height: 18%;
+  padding-left: 10%;
+}
+
+.navbar {
+  z-index: 3;
+  height: 100%;
+  width: 12%;
+  position: fixed;
+  background: linear-gradient(180deg, rgba(252,167,0,0.15), rgba(252,167,0,0.6));
+}
+
+.navBack{
+  z-index: 2;
+  background: white;
+  height: 100%;
+  width: 12%;
+  position: fixed;
+}
+
+.list {
+  padding-top: 85%;
+  align-content: center;
+}
+
+.list li{
+  padding: 5% 8%;
+  text-align: right;
+  font-size: 150%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.active{
+  background: rgb(252,167,0);
   color: white;
 }
 
-a {
-  text-decoration: none;
-}
 
-a:hover {
-  text-decoration: none;
+.list li:hover{
+  background: rgba(252,167,0,0.4);
 }
+/*--------------------topSection---------------------------------------*/
 
-.content{
+.top-section {
+  height: 50vh;
+  background-image: url('img/top-section2.jpeg');
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 15%;
-  background-color: black;
-  height: 100vh;
-  width: 100%;
 }
 
-.row{
-  margin: 1rem;
+#profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.overlay-top{
+  z-index: 1;
+  background-color: rgb(252,150,0);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+}
+
+.top-content{
+  z-index: 2;
+  box-sizing: content-box;
+  padding-left: 11%;
+  margin: auto;
+}
+
+/*-----------------AboutSection------------------------------------------*/
+
+.about-section{
+  margin-left: 12%;
+  background: firebrick;
+}
+
+.about{
+  display: flex;
+  background: rgba(255,255,255,0.85);
+}
+
+#about-visual{
+  padding: 5%;
+  min-width: 10%;
+}
+
+#about-content {
+  padding: 8% 0;
+  width: 60%;
+  font-size: 150%;
+}
+
+/*--------------------projects--------------------------------------*/
+
+.projects-section{
+  margin-left: 12%;
+  padding-top: 3%;
+  background: rgba(0,0,0,0.85);
+}
+
+.projects-section h2{
+  color: white;
+}
+
+/*-------------TechIKnow----------------------------------------------------*/
+
+.tech {
+  margin-left: 12%;
+}
+
+.star-small{
+  display: none;
+}
+
+/*--------------------Footer--------------------------------------------------*/
+
+.foot{
+  margin-left: 12%;
+  color: white;
+  background: rgba(0,0,0,0.85);
+}
+
+.icon-grp{
+  padding: 5%;
+  color: rgb(252,167,0);
+}
+
+.foot a{
+  color: rgb(252,167,0);
+}
+
+.icon-grp .fa{
+  padding: 1rem;
+}
+
+.fa:hover{
+  color: white;
+}
+
+/*---------------------Tablet--------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+      .list {
+        padding-top: 180%;
+      }
+
+      #logo{
+        width: 87%;
+        height: 14%;
+        padding-left: 13%;
+      }
+
+
+      .list li{
+        font-size: 110%;
+      }
+
+      #profile{
+        width: 180px;
+        height: 180px;
+      }
+
+      #about-visual{
+        padding: 5%;
+        min-width: 5%;
+      }
+
+      #about-visual img{
+        width: 185px;
+        height: 200px
+      }
+
+      #about-content {
+        font-size: 100%;
+      }
+}
+
+/*---------------------Phone--------------------------------------------------*/
+
+@media screen and (max-width: 450px) {
+    .navbar{
+      display: none;
+    }
+
+    .list li{
+      font-size: 100%;
+    }
+
+    #profile{
+      width: 200px;
+      height: 200px;
+    }
+
+    .navBack {
+      display: none;
+    }
+
+    .top-section {
+      height: 50vh;
+      padding-left: 0;
+    }
+
+    .top-content{
+      padding-left: 8%;
+    }
+
+    .about-section{
+      margin: 0px;
+    }
+
+    #about-visual{
+      padding: 5% 1rem;
+      width: 38%;
+    }
+    #about-visual img{
+      width: 80%;
+      height: 60%;
+    }
+    #about-content{
+      padding: 5% 0.5%;
+    }
+
+    #about-content {
+      font-size: 80%;
+    }
+
+    .projects-section{
+      margin-left: 0;
+    }
+
+    .tech {
+      margin-left: 0;
+    }
+
+    .star-big{
+      display: none;
+    }
+    .collection .collection-item.avatar .secondary-content{
+      top: 4px;
+      right: 4px;
+    }
+
+    .star-small{
+      display: block;
+    }
+
+    .foot{
+      margin-left: 0%;
+    }
+
+    .foot h2{
+      font-size: 2.5rem;
+    }
+
+    #cnts{
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+    }
 }

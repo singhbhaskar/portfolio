@@ -4,27 +4,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" >
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Wikipedia</title>
+  <title>Bhaskar</title>
 </head>
 <body>
-    <div class="content">
-      <h1>Wikipedia API</h1>
-      <div class="input-group w-50 p-3">
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-        <div class="input-group-append">
-          <span class="input-group-text" id="search"><a href="#" class='text-dark'>Search</a></span>
-          <span class="input-group-text" id="random"><a href="https://en.wikipedia.org/wiki/Special:Random" class='text-dark' target="_blank">Random</a></span>
-        </div>
+  <div class="navbar">
+    <img src="/img/logo.gif" alt="Logo" id="logo">
+    <ul class="list">
+      <li><a href="#tops" class="scroll">Home</a></li>
+      <li><a href="#abouts" class="scroll">About</a></li>
+      <li><a href="#projects" class="scroll">Projects</a></li>
+      <li><a href="#techs" class="scroll">Teach i know</a></li>
+    <!--  <li><a href="#contacts" class="scroll">Contact</a></li> -->
+    </ul>
+  </div>
+  <div class="navBack"></div>
+  <!-- Top Section -->
+  <div class="top-section" id="tops">
+    <div class="overlay-top"></div>
+      <div class="top-content center-align" style="color: white">
+      <img id="profile" src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAIABADGAAwAAQAAAAAAAA5fAAAAJDA1ZTAzNTk4LWM3ZjMtNGNiOS1hZWUyLTFkNWU1NzllMTA1Yg.jpg" alt="Profile">
+      <h1>Bhaskar Singh</h1>
+      <h4>-2nd Year BE Student </h4>
       </div>
+  </div>
 
-      <div class="list d-flex flex-md-column">
+  <!-- About Section -->
 
+  <div class="about-section" id="abouts">
+    <div class="about">
+      <div id="about-visual" style="text-align: centre">
+        <h1>Who am I?</h1>
+        <img src="img/clgLogo.png" alt="about">
+      </div>
+      <div id="about-content">
+        <p>Hello,<br>I am Bhaskar Singh from India. I am currently enrolled for BE programme in Computer Science and Enginnering at <a href="http://www.nie.ac.in" target="_blank">NIE ,Mysuru</a>. My interests include Computer Programming, sports, travelling. I am an active  member of IEEE and Onyx (E-cell). Recently I have been Learning about Web Development from YouTube and FreeCodeCamp. I aspire to become A Full Stack Developer in the days to come.</p>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js" charset="utf-8"></script>
+  <!--                            Projects                                              -->
+
+  <div class="projects-section" id="projects">
+    <h2>Projects</h2>
+    <div class="row">
+        <div class="col m6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/Wikipedia.gif">
+              <a href="https://codepen.io/bhaskar002/full/RxEava" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+              <a href="https://github.com/singhbhaskar/wikipediaViewer" target="_blank" style="margin-right: 3.5rem;" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons"><i class="fa fa-github-alt" aria-hidden="true"></i></i></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Wikipedia API Search</span>
+              <p>Here you can Search Anything on Wikipedia and the relevant results will be shown with a short description.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col m6 s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/RandomQuote.gif">
+                <a href="https://codepen.io/bhaskar002/full/ypxWdd" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+                <a href="https://github.com/singhbhaskar/randomQuote" target="_blank" style="margin-right: 3.5rem;" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons"><i class="fa fa-github-alt" aria-hidden="true"></i></i></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Random-Quote</span>
+                <p>This application generates random quotes which uses a free backend and you can share the quote generated using the twitter button.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m6 s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/TributePage.gif">
+
+                <a href="https://codepen.io/bhaskar002/full/PEdYYj" target="
+                " class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+                <a href="https://github.com/singhbhaskar/freecodecamp-tribute" target="_blank" style="margin-right: 3.5rem;" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons"><i class="fa fa-github-alt" aria-hidden="true"></i></i></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Tribute To DR. APJ Abdul Kalam</span>
+                <p>This page is tribute to the Honorable Dr. APJ Abdul Kalam who inspired me to persue science.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col m6 s12">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/Weather.gif">
+                <a href="https://codepen.io/bhaskar002/full/jYeoaz" target="_blank" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+                <a href="https://github.com/singhbhaskar/weatherApp" target="_blank" style="margin-right: 3.5rem;" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons"><i class="fa fa-github-alt" aria-hidden="true"></i></i></a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Weather</span>
+                <p>This application can show you the current weather from where this application has been accessed. The user can also covert Celsius To Fahrenheit and vice versa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+<!--                            Tech I know                                              -->
+
+  <div class="tech" id="techs">
+    <h2>Tech I Know;</h2>
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <img src="/img/tech/c++.png" alt="css" class="circle">
+        <span class="title">C++<a href="#!" class="secondary-content star-small">4<i class="material-icons">grade</i></a></span>
+        <p>I can code on c++. I understand OOP and can easily shift the codes to Java/Python.</p>
+        <a href="#!" class="secondary-content star-big"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:1.5rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:3rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:4.5rem"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <img src="/img/tech/git.png" alt="git" class="circle">
+        <span class="title">Git<a href="#!" class="secondary-content star-small">3<i class="material-icons">grade</i></a></span>
+        <p>I can Use git like committing the code, Handle branches, gitignore, fork, remote repository.</p>
+        <a href="#!" class="secondary-content star-big"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:1.5rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:3rem"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <img src="/img/tech/javaScript.png" alt="javaScript" class="circle">
+        <span class="title">JavaScript<a href="#!" class="secondary-content star-small">4<i class="material-icons">grade</i></a></span>
+        <p>I Know OOP and can Manipulate DOM.</p>
+        <a href="#!" class="secondary-content star-big"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:1.5rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:3rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:4.5rem"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <img src="/img/tech/jquey.png" alt="Jquery" class="circle">
+        <span class="title">Jquery<a href="#!" class="secondary-content star-small">3<i class="material-icons">grade</i></a></span>
+        <p>I Can use Jquery at an Intermidiate Level.</p>
+        <a href="#!" class="secondary-content star-big"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:1.5rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:3rem"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <img src="/img/tech/css3.svg" alt="css" class="circle">
+        <span class="title">Css3<a href="#!" class="secondary-content star-small">3<i class="material-icons">grade</i></a></span>
+        <p>Can style the Webpages with css and know the grid and flex.</p>
+        <a href="#!" class="secondary-content star-big"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:1.5rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:3rem"><i class="material-icons">grade</i></a>
+      </li>
+      <li class="collection-item avatar">
+        <img src="/img/tech/bootstrap.jpg" alt="bootstrap" class="circle">
+        <span class="title">Bootstrap<a href="#!" class="secondary-content star-small">4<i class="material-icons">grade</i></a></span>
+        <p>I can bootstrap to style the webpages and can also use other css Frameworks.</p>
+        <a href="#!" class="secondary-content star-big"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:1.5rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:3rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:4.5rem"><i class="material-icons">grade</i></a>
+      </li><li class="collection-item avatar">
+        <img src="/img/tech/ruby_on_rails.png" alt="RubyOnRails" class="circle">
+        <span class="title">Ruby On Rails<a href="#!" class="secondary-content star-small">3<i class="material-icons">grade</i></a></span>
+        <p>I can create CRUD related Web Applications.</p>
+        <a href="#!" class="secondary-content star-big"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:1.5rem"><i class="material-icons">grade</i></a>
+        <a href="#!" class="secondary-content star-big" style="padding-right:3rem"><i class="material-icons">grade</i></a>
+      </li>
+  </div>
+
+  <!--                            Footer                                              -->
+  <div class="foot" id="contacts">
+    <h2 class="center-align" style="padding-top: 2rem;">You may Contact me at</h2>
+    <div class="icon-grp center-align">
+      <a target="_blank" href="https://codepen.io/bhaskar002/"><i class="fa fa-codepen fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.freecodecamp.org/bhaskar002"><i class="fa fa-free-code-camp fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.facebook.com/bhaskarkumar.002/"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://plus.google.com/111990332605889883148"><i class="fa fa-google-plus-official fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank "href="https://github.com/singhbhaskar"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <a id="cnts" class="btn-floating btn-large waves-effect waves-light red" href="#contacts"><i class="material-icons">call</i></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
 </body>
 </html>
